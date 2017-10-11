@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+     <script src="https://use.fontawesome.com/9a3ae4fa31.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <LINK REL=StyleSheet HREF="normalize.css" TYPE="text/css" MEDIA=screen>  
     <LINK REL=StyleSheet HREF="styles.css" TYPE="text/css" MEDIA=screen>  
@@ -10,16 +11,16 @@
 
 <body>
  <!-- Main flex container -->
-  <wrapper class="main-wrap"></wrapper>
+  <div class="main-wrap">
   <!-- Navigation bar -->
     <nav class="nav-wrap">
       <div class="nav-logo"><img src="images/aloha-logo.svg"></div>
-      <div class="nav-links">
-            <a href="#">ABOUT</a>
-            <a href="#">SHOP</a>
-            <a href="#">FEATURED</a>
-            <a href="#">UPDATES</a>   
-      </div>
+        <ul class="nav-links">
+            <li>ABOUT</li>
+            <li>SHOP</li>
+            <li>FEATURED</li>
+            <li>UPDATES</li>   
+        </ul>
       <div class="nav-cart"><img src="images/cart-icon.svg"></div>
     </nav>  
 <!-- Hero image -->
@@ -31,37 +32,62 @@
 
     
 <!--  Hero caption -->
-    <article class="under-hero"><h2><span   class="span-italic"> Hand-Crafted               </span><span  class="span-bold">Styles</span>    </h2>
+    <article class="under-hero"><h2>Hand-Crafted Styles</h2>
         <p> Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
     </article>
 
 <!-- GRID Gallery of images -->
 <div class="ratio-wrapper">  
     <gallery class="gallery">
-        <div class="card">MEN'S</div>
-        <div class="card">TRENDS</div>
-        <div class="card">GLASSES</div>
-        <div class="card">SALES</div>
-        <div class="card">BAGS</div>
-        <div class="card">WOMEN'S</div>  
+        <div class="card"><p>MENS</p></div>
+        <div class="card"><p>HATS</p></div>
+        <div class="card"><p>GLASSES</p></div>
+        <div class="card"><p>SALES</p></div>
+        <div class="card"><p>BAGS</p></div>
+        <div class="card"><p>WOMEN'S</p></div> 
     </gallery>
 </div> 
+
+
 <!-- Caption -->
-    <article class="span-italic"><h2>Most-Loved </span><span  class="span-bold">Products</span> </h2>
-    <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
-    
+    <article class="under-hero"> <h2><i>Most-Loved</i><b> Products</b></h2>
     </article>
 <!-- Carousel of products -->
     <aside class="carousel">carousel</aside>
 <!-- Email submission form -->
-    <div class="email-form">
-            <h2 class="span-italic">Sign-up for </span><span  class="span-bold">Updates</span> </h2>
-
+   <div class="email-wrap">
+            <h2>Sign-up for Updates</h2>
+            <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
+            <form>
+                    <input type="text" placeholder="Your Email">
+                    <button>Subscribe</button>
+            </form>
             
+           
     </div>
+
 <!-- Footer -->
-    <footer class="footer">footer</footer>
-  </wrapper>
+    <footer>
+        <div class="left-foot">
+            <p> stuff stuff stuffstuff stuff stuffstuff stuff stuffstuff stuff stuffstuff stuff stuffstuff stuff stuffstuff stuff stuffstuff stuff stuffstuff stuff stuffstuff stuff stuff </p>
+
+        </div>
+        <div class="right-foot">
+            <ul>
+                <li>one</li>
+                <li>one</li> 
+                <li>one</li>
+                 <li>one</li>
+                 <li>one</li>
+                
+
+
+            </ul>
+        </div>
+    </footer>
+  
+
+</div>
 
 </body>
 </html>
