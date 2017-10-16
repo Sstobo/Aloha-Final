@@ -1,93 +1,136 @@
+<!-- HEAD  -->
 <!DOCTYPE html>
 <html>
-<head>
-     <script src="https://use.fontawesome.com/9a3ae4fa31.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <LINK REL=StyleSheet HREF="normalize.css" TYPE="text/css" MEDIA=screen>  
-    <LINK REL=StyleSheet HREF="styles.css" TYPE="text/css" MEDIA=screen>  
-    <meta charset="utf-8">
-    <title>Aloha Apparel Co.</title> 
-</head>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+      <link rel=StyleSheet href="normalize.css" TYPE="text/css" media=screen>  
+      <link rel=StyleSheet HREF="styles.css" TYPE="text/css" mdeia=screen>    
+      <link href="styles.css" type="text/css" rel="stylesheet"/>
+      <title>Aloha Apparel Co.</title> 
+  </head>
 
-<body>
- <!-- Main flex container -->
-  <div class="main-wrap">
-  <!-- Navigation bar -->
-    <nav class="nav-wrap">
-      <div class="nav-logo"><img src="images/aloha-logo.svg"></div>
-        <ul class="nav-links">
-            <li>ABOUT</li>
-            <li>SHOP</li>
-            <li>FEATURED</li>
-            <li>UPDATES</li>   
-        </ul>
-      <div class="nav-cart"><img src="images/cart-icon.svg"></div>
-    </nav>  
-<!-- Hero image -->
-    <header class="hero">
+  <body>
+<!-- NAVIGATION BAR -->
+    <nav class="nav row">
+      <div class="logo"><img src="images/aloha-logo.svg" alt="Aloha Logo"></div>
+      <div class="links">
+        <ul class="links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#gallery">Featured</a></li>
+          <li><a href="#updates">Updates</a></li>   
+      </ul>
+      </div>
+      <div class="cart" ><button class="counter">0</button><img src="images/cart-icon.svg" alt="Cart Icon"></div>
+    </nav>
+
+<!-- HERO IMAGE -->
+    <header class="hero row">
         <p>NEW COLLECTION</p>
         <h1>Spring / Summer 2016</h1> 
     </header>
 
-
-    
-<!--  Hero caption -->
-    <article class="under-hero"><h2>Hand-Crafted Styles</h2>
+<!-- FIRST ARTICLE -->
+    <article class="article row" id="about"> 
+        <h2><span class="italic">Hand-Crafted-</span><span class="bolder">        Styles</span></h2>
         <p> Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
+    </article> 
+
+<!-- GALLERY -->
+  <main class="gallery row" id="gallery">
+        <div class="card"><a href=#>Men's</a></div>
+        <div class="card"><a href=#>Hats</a></div>
+        <div class="card"><a href=#>Glasses</a></div>
+        <div class="card"><a href=#>Sales</a></div>
+        <div class="card"><a href=#>Bags</a></div>
+        <div class="card"><a href=#>Women's</a></div> 
+  </main>
+
+
+<!-- SECOND ARTICLE -->
+    <article class="article row" id="updates">
+        <h2><span class="italic">      Most-Loved- </span><span class="bolder">  Products</span></h2>
     </article>
 
-<!-- GRID Gallery of images -->
-<div class="ratio-wrapper">  
-    <gallery class="gallery">
-        <div class="card"><p>MENS</p></div>
-        <div class="card"><p>HATS</p></div>
-        <div class="card"><p>GLASSES</p></div>
-        <div class="card"><p>SALES</p></div>
-        <div class="card"><p>BAGS</p></div>
-        <div class="card"><p>WOMEN'S</p></div> 
-    </gallery>
-</div> 
-
-
-<!-- Caption -->
-    <article class="under-hero"> <h2><i>Most-Loved</i><b> Products</b></h2>
-    </article>
-<!-- Carousel of products -->
-    <aside class="carousel">carousel</aside>
-<!-- Email submission form -->
-   <div class="email-wrap">
-            <h2>Sign-up for Updates</h2>
-            <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
-            <form>
-                    <input type="text" placeholder="Your Email">
-                    <button>Subscribe</button>
-            </form>
-            
-           
-    </div>
-
-<!-- Footer -->
-    <footer>
-        <div class="left-foot">
-            <p> stuff stuff stuffstuff stuff stuffstuff stuff stuffstuff stuff stuffstuff stuff stuffstuff stuff stuffstuff stuff stuffstuff stuff stuffstuff stuff stuffstuff stuff stuff </p>
-
+<!-- IMAGE CAROUSEL -->
+    <section class="carousel row" id="shop">
+        <div class="main-carousel">
+            <div class="carousel-cell"><img src="images/blue-silk-dress.jpg" alt="Blue Silk Dress">
+                <p>Dresses</p>
+                <h3>Blue Silk Dress</h3>
+                <p>$179.00</p>
+            </div>
+            <div class="carousel-cell"><img src="images/cotton-blue-shirt.jpg" alt="Blue Silk Shirt">
+                <p>Shirts</p>
+                <h3>Blue Silk Shirt</h3>
+                <p>$89.00</p>
+            </div>
+            <div class="carousel-cell"><img src="images/checked-stretch-dress.jpg" alt="Checked Stretch Dress">
+                <p>Dresses</p>
+                <h3>Checked Stretch Dress</h3>
+                <p>$159.00</p>
+            </div>
+            <div class="carousel-cell"><img src="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress">
+                <p>Dresses</p>
+                <h3>Stretch Knit Dress</h3>
+                <p>$169.00</p>
         </div>
-        <div class="right-foot">
-            <ul>
-                <li>one</li>
-                <li>one</li> 
-                <li>one</li>
-                 <li>one</li>
-                 <li>one</li>
-                
-
-
-            </ul>
+            <div class="carousel-cell"><img src="images/cotton-yellow-tshirt.jpg" alt="Cotton Yellow T-Shirt">
+                <p>Shirts</p>
+                <h3>Cotton Yellow T-Shirt</h3>
+                <p>$59.00</p>
         </div>
+            <div class="carousel-cell"><img src="images/pink-dotted-dress.jpg" alt="Pink Dotted Dress">
+                <p>Dresses</p>
+                <h3>Pink Dotted Dress</h3>
+                <p>$139.00</p>
+        </div>
+            <div class="carousel-cell"><img src="images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack">
+                <p>Backpacks</p>
+                <h3>Blue Hipster Backpack</h3>
+                <p>$119.00</p>
+            </div>  
+            <div class="carousel-cell"><img src="images/demin-overall-shorts.jpg" alt="Denim Overall Shorts">
+                <p>Shorts</p>
+                <h3>Denim Overall Shorts</h3>
+                <p>$59.00</p>
+            </div>
+        </div>
+    </section>
+   
+<!-- EMAIL CONTACT BAR -->
+    <aside class="email-wrap row">
+      <h1><span class="italic">Sign-up for</span><span class="bolder">-Updates</span>   </h1>
+      <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
+      <form class="form1">
+          <input class="email-input" type="text" placeholder="Your Email" o>
+          <button class="email-button">Subscribe</button>
+      </form>
+    </aside>
+
+<!-- LINK FOOTER -->
+    <footer class="left-foot row">
+        <p> &copy; 2016 Aloah Apparel Co.
+        Powered by HTML and CSS.</p>
+        <p>604-604-6040.<a href="#">info@alohaapparel.com</a></p>
+        <p><span class="grey-text">1490 W Broadway, Vancouver BC, Canada </span> </p>
+        </footer>
+<!-- ICON FOOTER -->
+    <footer class="right-foot row"><ul>
+        <li><i class="fa fa-facebook" aria-hidden="true"></i><span class="icon-text">Facebook</span></li>
+        <li><i class="fa fa-twitter" aria-hidden="true"></i><span class="icon-text">Twitter</span></li> 
+        <li><i class="fa fa-instagram" aria-hidden="true"></i><span class="icon-text">Instagram</span></li>
+        <li><i class="fa fa-pinterest" aria-hidden="true"></i><span class="icon-text">Pinterest</span></li>
+        <li><i class="fa fa-google-plus" aria-hidden="true"></i><span class="icon-text">Google</span></li>
+        </ul>
     </footer>
-  
 
-</div>
-
-</body>
+<!-- SCRIPTS  -->
+    <script src="https://use.fontawesome.com/9a3ae4fa31.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+     <script src="scripts.js"></script>   
+  </body>
 </html>
