@@ -1,44 +1,43 @@
 <!-- HEAD  -->
-<!DOCTYPE html>
-<html>
+  <!DOCTYPE html>
+  <html>
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-      <link rel=StyleSheet href="normalize.css" TYPE="text/css" media=screen>  
-      <link rel=StyleSheet HREF="styles.css" TYPE="text/css" mdeia=screen>    
-      <link href="styles.css" type="text/css" rel="stylesheet"/>
       <title>Aloha Apparel Co.</title> 
+      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+      <link rel=StyleSheet href="lib/normalize.css" type="text/css" media=screen>  
+      <link rel=StyleSheet href="styles.css" type="text/css" media=screen>    
+      <link href="styles.css" type="text/css" rel="stylesheet"/>
   </head>
-
+  <a class="screen-reader-text" href="#main">Skip to content</a>
   <body>
-<!-- NAVIGATION BAR -->
+
     <nav class="nav row">
       <div class="logo"><img src="images/aloha-logo.svg" alt="Aloha Logo"></div>
       <div class="links">
-        <ul class="links">
+        <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#shop">Shop</a></li>
           <li><a href="#gallery">Featured</a></li>
           <li><a href="#updates">Updates</a></li>   
-      </ul>
+        </ul>
       </div>
       <div class="cart" ><button class="counter">0</button><img src="images/cart-icon.svg" alt="Cart Icon"></div>
     </nav>
 
-<!-- HERO IMAGE -->
     <header class="hero row">
-        <p>NEW COLLECTION</p>
+        <p>New Collection</p>
         <h1>Spring / Summer 2016</h1> 
     </header>
 
-<!-- FIRST ARTICLE -->
     <article class="article row" id="about"> 
-        <h2><span class="italic">Hand-Crafted-</span><span class="bolder">        Styles</span></h2>
+        <h2><span class="italic">Hand-Crafted</span><span class="bolder"> &#160; Styles</span></h2>
         <p> Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
     </article> 
 
-<!-- GALLERY -->
+<a class="screen-reader-text" href="#main">Skip to content</a>
+
   <main class="gallery row" id="gallery">
         <div class="card"><a href=#>Men's</a></div>
         <div class="card"><a href=#>Hats</a></div>
@@ -48,15 +47,12 @@
         <div class="card"><a href=#>Women's</a></div> 
   </main>
 
-
-<!-- SECOND ARTICLE -->
     <article class="article row" id="updates">
-        <h2><span class="italic">      Most-Loved- </span><span class="bolder">  Products</span></h2>
+        <h2><span class="italic"> Most-Loved &#160; </span> <span class="bolder"> Products</span></h2>
     </article>
 
-<!-- IMAGE CAROUSEL -->
     <section class="carousel row" id="shop">
-        <div class="main-carousel">
+        <div class="main-carousel" id="main">
             <div class="carousel-cell"><img src="images/blue-silk-dress.jpg" alt="Blue Silk Dress">
                 <p>Dresses</p>
                 <h3>Blue Silk Dress</h3>
@@ -100,37 +96,35 @@
         </div>
     </section>
    
-<!-- EMAIL CONTACT BAR -->
     <aside class="email-wrap row">
-      <h1><span class="italic">Sign-up for</span><span class="bolder">-Updates</span>   </h1>
+      <h4><span class="italic">Sign-up for</span><span class="bolder">-Updates</span></h4>
       <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
       <form class="form1">
-          <input class="email-input" type="text" placeholder="Your Email" o>
+          <input class="email-input" type="text" placeholder="Your Email">
           <button class="email-button">Subscribe</button>
       </form>
     </aside>
 
-<!-- LINK FOOTER -->
-    <footer class="left-foot row">
+    <aside class="left-foot row">
         <p> &copy; 2016 Aloah Apparel Co.
         Powered by HTML and CSS.</p>
         <p>604-604-6040.<a href="#">info@alohaapparel.com</a></p>
         <p><span class="grey-text">1490 W Broadway, Vancouver BC, Canada </span> </p>
-        </footer>
-<!-- ICON FOOTER -->
+        </aside>
+
     <footer class="right-foot row"><ul>
-        <li><i class="fa fa-facebook" aria-hidden="true"></i><span class="icon-text">Facebook</span></li>
-        <li><i class="fa fa-twitter" aria-hidden="true"></i><span class="icon-text">Twitter</span></li> 
-        <li><i class="fa fa-instagram" aria-hidden="true"></i><span class="icon-text">Instagram</span></li>
-        <li><i class="fa fa-pinterest" aria-hidden="true"></i><span class="icon-text">Pinterest</span></li>
-        <li><i class="fa fa-google-plus" aria-hidden="true"></i><span class="icon-text">Google</span></li>
+        <li><i class="fa fa-facebook" aria-hidden="true"></i><span >Facebook</span></li>
+        <li><i class="fa fa-twitter" aria-hidden="true"></i><span >Twitter</span></li> 
+        <li><i class="fa fa-instagram" aria-hidden="true"></i><span >Instagram</span></li>
+        <li><i class="fa fa-pinterest" aria-hidden="true"></i><span >Pinterest</span></li>
+        <li><i class="fa fa-google-plus" aria-hidden="true"></i><span >Google</span></li>
         </ul>
     </footer>
 
-<!-- SCRIPTS  -->
     <script src="https://use.fontawesome.com/9a3ae4fa31.js"></script>
-    <script src="jquery-3.2.1.min.js"></script>
+    <script src="lib/jquery-3.2.1.min.js"></script>
      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-     <script src="scripts.js"></script>   
+     <script src="js/scripts.js"></script>   
+   
   </body>
 </html>
